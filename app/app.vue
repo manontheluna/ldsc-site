@@ -14,25 +14,40 @@
                     </div>
                 </div>
                 <div class="language-toggle">
-                    <div class="es" :class="{ active: activeLanguage }">
+                    <div
+                        @click="toggleLang('es')"
+                        :class="['es', { active: activeLanguage === 'es' }]"
+                    >
                         <h4>
                             ES
                         </h4>
                     </div>
-                    <div class="en">
+                    <div
+                        @click="toggleLang('en')"
+                        :class="['en', { active: activeLanguage === 'en' }]"
+                    >
                         <h4>
                             EN
                         </h4>
                     </div>
+                    <div class="language-marker" :class="{ 'marker-right': markerRight }">
+                        <span>language marker</span>
+                    </div>
                 </div>
-            </div>
+            </div> 
         </header>
     </div>
 </template>
 <script setup>
 import { ref } from 'vue'
 
-const activeLanguage = ref(true)
+const activeLanguage = ref('es')
+const markerRight = ref(false)
+
+function toggleLang(lang) {
+    activeLanguage.value = lang
+    markerRight.value = lang === 'en'
+}
 </script>
 <style lang="sass">
     // global styles
@@ -60,8 +75,30 @@ const activeLanguage = ref(true)
         &.active
             background: var(--primary-contrast-light)
             color: var(--primary-light)
+        h4
+            position: relative
+            z-index: 2
+    .es
+        border-radius: .25rem 0 0 .25rem
+    .en
+        border-radius: 0 .25rem .25rem 0
     .language-toggle
         display: flex
+        position: relative
+        .language-marker
+            height: 18px
+            width: 24px
+            background: var(--primary-contrast-saturated)
+            border-radius: .25rem
+            position: absolute
+            top: 3px
+            left: 3px
+            z-index: 1
+            transition: transform .25s ease
+            &.marker-right
+                transform: translateX(30px)
+            span
+                display: none
     .mobile-nav
         height: 3.5rem
         background: var(--secondary-dark)
