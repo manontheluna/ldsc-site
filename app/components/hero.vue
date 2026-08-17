@@ -11,7 +11,7 @@
                 Live Norteño Music For Weddings, Parties, &amp; Special Events
             </h1>
             <p>
-                Professional norteno entertainment across Southern California with over 20 years of live perfomance experience.
+                Professional norteño entertainment across Southern California with over 20 years of live perfomance experience.
             </p>
             <div class="hero-content-ctas">
                 <button class="book-now">
@@ -45,18 +45,35 @@
         display: flex
         flex-direction: column
         gap: 1.5rem
+        max-width: 875px
+        margin: 0 auto
         h1
             font-family: var(--display-font)
             font-size: 1.5rem
             line-height: 2rem
             color: var(--primary-contrast)
+            @media (min-width: 599px)
+                font-size: 2.25rem
+                line-height: 2.25rem
+                text-align: center
+            @media (min-width: 1019px)
+                font-size: 3rem
+                line-height: 3rem
         p
             font-family: var(--copy-font)
             color: var(--primary-light)
+            @media (min-width: 599px)
+                font-size: 1.5rem
+                text-align: center
+            @media (min-width: 1019px)
+                font-size: 2rem
         .hero-content-ctas
             display: flex
             flex-direction: column
             gap: 1.5rem
+            @media (min-width: 599px)
+                flex-direction: row
+                justify-content: center
             button
                 width: 11.25rem
                 height: 3rem
