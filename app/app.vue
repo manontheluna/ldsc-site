@@ -2,7 +2,7 @@
     <div class="app">
         <header>
             <div class="mobile-nav">
-                <div class="burger" @click="(() => { console.log('ay yo') })">
+                <div class="burger" @click="(() => { navOpen = true })">
                     <div
                         v-for="(p, index) in 3"
                         :key="index"
@@ -36,14 +36,37 @@
                 </div>
             </div> 
         </header>
+        <nav v-if="navOpen">
+            <button class="close-mobile-nav" @click="() => { navOpen = false }">
+                <span>
+                    Close Mobile Navigation
+                </span>
+            </button>
+            <ul>
+                <li v-for="(link, index) in NAV_LINKS" :key="index">
+                    {{ link }}
+                </li>
+            </ul>
+        </nav>
         <hero />
     </div>
 </template>
 <script setup>
 import { ref } from 'vue'
 
+const NAV_LINKS = [
+    'events',
+    'why us',
+    'videos',
+    'gallery',
+    'faqs',
+    'testimonials',
+    'contact'
+]
+
 const activeLanguage = ref('es')
 const markerRight = ref(false)
+const navOpen = ref(false)
 
 function toggleLang(lang) {
     activeLanguage.value = lang
@@ -63,6 +86,7 @@ function toggleLang(lang) {
     // global styles
     :root
         --primary-dark: #121516
+        --secondary-dark: #031019
         --primary-light: #EEEEEE
         --primary-contrast: #FFEFD7
         --primary-contrast-light: #FFB66D
@@ -84,7 +108,7 @@ function toggleLang(lang) {
         top: 0
         left: 0
         width: 100%
-        z-index: 9
+        z-index: 4
     .es, .en
         width: 1.875rem
         height: 1.5rem
@@ -126,7 +150,7 @@ function toggleLang(lang) {
     .mobile-nav
         height: 3.5rem
         background: var(--primary-dark)
-        padding: 0 1rem
+        padding: 0 1.5rem
         display: flex
         align-items: center
         justify-content: space-between
@@ -145,4 +169,56 @@ function toggleLang(lang) {
             width: 1.25rem
             background: var(--primary-light)
             margin-bottom: 0
+
+    // navigation (mobile)
+    nav
+        position: fixed
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        z-index: 5
+        background: var(--primary-dark)
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 1.5rem
+        ul
+            list-style: none
+            display: flex
+            flex-direction: column
+            gap: 1.5rem
+            li
+                font-family: var(--section-heading-font)
+                font-size: 1.5rem
+                text-transform: uppercase
+                text-align: center
+                color: var(--primary-light)
+        .close-mobile-nav
+            height: 1.5rem
+            width: 1.5rem
+            position: absolute
+            top: 1.5rem
+            left: 1.5rem
+            background: none
+            border: none
+            &:before
+                position: absolute
+                top: 0
+                transform: rotate(45deg)
+                content: ''
+                height: 1.5rem
+                width: 3px
+                background: var(--primary-light)
+            &:after
+                position: absolute
+                top: 0
+                left: 50%
+                transform: rotate(-45deg)
+                content: ''
+                height: 1.5rem
+                width: 3px
+                background: var(--primary-light)
+            span
+                display: none
 </style>

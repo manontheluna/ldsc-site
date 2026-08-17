@@ -63,10 +63,10 @@
                 font-family: var(--section-heading-font)
                 text-transform: uppercase
                 border: none
-                color: var(--primary-dark)
                 border-radius: .25rem
                 &.book-now
                     background: var(--primary-light)
+                    color: var(--secondary-dark)
                 &.call-now
                     background: none
                     border: 1px solid var(--primary-light)
