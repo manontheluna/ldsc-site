@@ -103,6 +103,8 @@ function toggleLang(lang) {
     html, body
         margin: 0
         width: 100%
+    button
+        cursor: pointer
     // styles
     header
         position: fixed
@@ -134,6 +136,7 @@ function toggleLang(lang) {
     .language-toggle
         display: flex
         position: relative
+        cursor: pointer
         .language-marker
             height: 18px
             width: 24px

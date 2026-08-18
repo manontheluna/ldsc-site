@@ -66,7 +66,7 @@
                 font-size: 1.5rem
                 text-align: center
             @media (min-width: 1019px)
-                font-size: 2rem
+                font-size: 1.5rem
         .hero-content-ctas
             display: flex
             flex-direction: column

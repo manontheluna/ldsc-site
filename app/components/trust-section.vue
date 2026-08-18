@@ -43,16 +43,20 @@ const TRUST_ITEMS = [
         color: var(--primary-contrast-light)
         font-family: var(--section-heading-font)
         text-transform: uppercase
+        @media (min-width: 1019px)
+            font-size: 1.25rem
     h3
         font-family: var(--copy-font)
     ul
         display: flex
         flex-direction: column
         gap: 3rem
-        @media(min-width: 524px)
+        @media (min-width: 524px)
             flex-direction: row
             flex-wrap: wrap
             gap: 1.5rem
+        @media (min-width: 1019px)
+            flex-wrap: nowrap
     li
         display: flex
         flex-direction: column
@@ -61,6 +65,7 @@ const TRUST_ITEMS = [
         gap: 1.5rem
         font-family: var(--copy-font)
         color: var(--primary-light)
-        @media(min-width: 524px)
+        padding: 6rem 3rem
+        @media (min-width: 524px)
             width: calc(100% / 2 - 1.5rem)
 </style>
