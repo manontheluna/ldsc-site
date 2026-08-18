@@ -49,6 +49,7 @@
             </ul>
         </nav>
         <hero />
+        <trust-section />
     </div>
 </template>
 <script setup>
