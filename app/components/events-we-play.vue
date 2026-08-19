@@ -25,6 +25,10 @@
         {
             label: 'Birthdays',
             copy: 'Make your birthday celebration one to remember with live music, great energy, and songs everyone can enjoy. We bring the party to life and keep your guests singing, dancing, and having a great time.'
+        },
+        {
+            label: 'Weddings',
+            copy: 'From the ceremony to the reception, we provide live music that sets the perfect mood for your special day. We’ll help create unforgettable moments and keep the dance floor moving all night long.'
         }
     ]
 </script>
@@ -42,11 +46,16 @@
         color: var(--primary-dark)
     ul
         list-style: none
+        border: 1px dashed red
+        display: flex
+        overflow: hidden
+        gap: 1.5rem
         li
             background: var(--primary-dark)
             padding: 1.5rem
             height: 25rem
-            width: 18rem
+            width: 18.375rem
+            flex-shrink: 0
             display: flex
             flex-direction: column
             gap: 1.5rem
