@@ -65,7 +65,9 @@ const TRUST_ITEMS = [
         gap: 1.5rem
         font-family: var(--copy-font)
         color: var(--primary-light)
-        padding: 6rem 3rem
+        padding: 3rem
         @media (min-width: 524px)
             width: calc(100% / 2 - 1.5rem)
+        @media (min-width: 1019px)
+            padding: 6rem 3rem
 </style>

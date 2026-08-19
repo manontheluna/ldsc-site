@@ -50,6 +50,7 @@
         </nav>
         <hero />
         <trust-section />
+        <events-we-play />
     </div>
 </template>
 <script setup>
