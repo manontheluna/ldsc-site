@@ -1,5 +1,5 @@
 <template>
-    <div class="trust-section">
+    <section class="trust-section">
         <ul>
             <li v-for="(item, index) in TRUST_ITEMS" :key="index">
                 <h2>
@@ -10,7 +10,7 @@
                 </p>
             </li>
         </ul>
-    </div>
+    </section>
 </template>
 
 <script setup>
