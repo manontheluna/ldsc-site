@@ -55,7 +55,7 @@ const TRUST_ITEMS = [
             flex-direction: row
             flex-wrap: wrap
             gap: 1.5rem
-        @media (min-width: 1019px)
+        @media (min-width: 1140px)
             flex-wrap: nowrap
     li
         display: flex

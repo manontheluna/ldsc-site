@@ -95,7 +95,7 @@ function moveCards() {
         font-size: 1.5rem
         font-family: var(--display-font)
         color: var(--primary-dark)
-        @media (min-width: 1019px)
+        @media (min-width: 743px)
             font-size: 3rem
             text-align: center
     .event-cards

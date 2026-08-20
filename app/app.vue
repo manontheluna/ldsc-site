@@ -51,6 +51,7 @@
         <hero />
         <trust-section />
         <events-we-play />
+        <see-us-live />
     </div>
 </template>
 <script setup>
@@ -58,8 +59,8 @@ import { ref } from 'vue'
 
 const NAV_LINKS = [
     'events',
-    'why us',
     'videos',
+    'why us',
     'gallery',
     'faqs',
     'testimonials',
