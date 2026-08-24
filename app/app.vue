@@ -47,6 +47,7 @@
         <trust-section />
         <events-we-play />
         <see-us-live />
+        <faq />
     </div>
 </template>
 <script setup>
