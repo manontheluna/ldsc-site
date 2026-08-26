@@ -47,6 +47,7 @@
         <trust-section />
         <events-we-play />
         <see-us-live />
+        <why-us />
         <faq />
     </div>
 </template>
@@ -56,9 +57,9 @@ import { onMounted, onUnmounted, ref } from 'vue'
 const NAV_LINKS = [
     'events',
     'videos',
+    'faqs',
     'why us',
     'gallery',
-    'faqs',
     'testimonials',
     'contact'
 ]

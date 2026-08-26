@@ -109,14 +109,21 @@ function toggleQuestion(index) {
     display: flex
     flex-direction: column
     gap: 1.5rem
+    @media (min-width: 743px)
+        gap: 3rem
     h2
         font-family: var(--display-font)
         color: var(--primary-dark)
+        @media (min-width: 743px)
+            font-size: 3rem
+            text-align: center
     ul
         list-style: none
         display: flex
         flex-direction: column
         gap: 1.5rem
+        max-width: 821px
+        margin: 0 auto
         button
             height: 1rem
             width: 1rem
@@ -160,6 +167,7 @@ function toggleQuestion(index) {
                 display: flex
                 justify-content: space-between
                 gap: 1rem
+                cursor: pointer
             .answer-wrapper
                 height: 0
                 overflow: hidden
