@@ -12,7 +12,7 @@
                 <p>
                     {{ card.copy }}
                 </p>
-                <small>
+                <small v-if="card.author && card.date">
                     {{ card.author }} - {{ card.date }}
                 </small>
             </li>

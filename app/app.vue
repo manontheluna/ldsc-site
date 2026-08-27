@@ -50,6 +50,7 @@
         <why-us />
         <faq />
         <testimonials />
+        <footer-cta />
     </div>
 </template>
 <script setup>

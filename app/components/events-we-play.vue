@@ -12,7 +12,6 @@
 
 <script setup>
 import { ref } from 'vue'
-// single card for styling - TODO: add array of cards
 const EVENTS = [
     {
         label: 'Birthdays',
@@ -51,15 +50,6 @@ const EVENTS = [
         copy: 'Turn a new chapter into a celebration with live Norteño music that keeps the party fun and upbeat. Gather your friends and enjoy an unforgettable night of great music and dancing.'
     }
 ]
-
-const currentIndex = ref(0)
-const uiCards = ref()
-function moveCards() {
-    currentIndex.value++
-    if (currentIndex.value >= cards.length) {
-        currentIndex.value = 0
-    }
-}
 </script>
 
 <style lang="sass" scoped>
