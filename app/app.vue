@@ -49,6 +49,7 @@
         <see-us-live />
         <why-us />
         <faq />
+        <testimonials />
     </div>
 </template>
 <script setup>

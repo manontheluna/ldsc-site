@@ -1,5 +1,10 @@
 <template>
-    <section class="testimonials"></section>
+    <section class="testimonials">
+        <h2>
+            Testimonials
+        </h2>
+        <carousel :cardData="TESTIMONIALS" />
+    </section>
 </template>
 
 <script setup>
@@ -67,4 +72,20 @@ const TESTIMONIALS = [
 ];
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.testimonials
+    background: var(--primary-contrast)
+    padding: 3rem 1.5rem
+    display: flex
+    flex-direction: column
+    gap: 1.5rem
+    @media (min-width: 743px)
+        gap: 3rem
+    h2
+        font-size: 1.5rem
+        font-family: var(--display-font)
+        color: var(--primary-dark)
+        @media (min-width: 743px)
+            font-size: 3rem
+            text-align: center
+</style>
