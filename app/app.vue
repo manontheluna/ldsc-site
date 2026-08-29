@@ -51,6 +51,7 @@
         <faq />
         <testimonials />
         <footer-cta />
+        <contact />
     </div>
 </template>
 <script setup>
