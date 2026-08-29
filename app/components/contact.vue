@@ -73,7 +73,8 @@ const eventType = [
     flex-direction: column
     gap: 1.5rem
     min-height: 732px
-    height: 90vh
+    @media (max-width: 980px)
+        height: 100vh
     @media (min-width: 743px)
         flex-direction: row-reverse
     .call-cta
