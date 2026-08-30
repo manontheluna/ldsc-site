@@ -10,11 +10,11 @@
                         Bringing authentic Norteño music to weddings, quinceañeras, private events, and celebrations throughout Southern California.
                     </p>
                     <div class="social">
-                        <a href="#">
-                            [Instagram]
+                        <a href="https://www.instagram.com/los_de_south_central_oficial">
+                            Instagram
                         </a>
-                        <a href="#">
-                            [Tik Tok]
+                        <a href="https://www.tiktok.com/@los_de_south_central">
+                            Tik Tok
                         </a>
                     </div>
                 </div>
