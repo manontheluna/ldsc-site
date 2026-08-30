@@ -52,6 +52,7 @@
         <testimonials />
         <footer-cta />
         <contact />
+        <site-footer />
     </div>
 </template>
 <script setup>
