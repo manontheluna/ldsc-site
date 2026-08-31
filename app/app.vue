@@ -9,15 +9,19 @@
                     </span>
                 </button>
                 <ul>
-                    <li v-for="(link, index) in NAV_LINKS" :key="index">
-                        {{ link }}
+                    <li v-for="(link, index) in LINKS" :key="index">
+                        <a :href="`#${link.anchor}`" @click="navOpen = false">
+                            {{ link.label }}
+                        </a>
                     </li>
                 </ul>
             </div>
             <div class="desktop-nav" :class="{ scrolled: isScrolled }">
                 <ul>
-                    <li v-for="(link, index) in NAV_LINKS" :key="index">
-                        {{ link }}
+                    <li v-for="(link, index) in LINKS" :key="index">
+                        <a :href="`#${link.anchor}`">
+                            {{ link.label }}
+                        </a>
                     </li>
                 </ul>
                 <div class="language-toggle desktop-toggle">
@@ -58,14 +62,13 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from 'vue'
 
-const NAV_LINKS = [
-    'events',
-    'videos',
-    'faqs',
-    'why us',
-    'gallery',
-    'testimonials',
-    'contact'
+const LINKS = [
+    { label: 'events', anchor: 'events-we-play' },
+    { label: 'videos', anchor: 'videos' },
+    { label: 'why us', anchor: 'why-us' },
+    { label: 'faq', anchor: 'faq' },
+    { label: 'testimonials', anchor: 'testimonials' },
+    { label: 'contact', anchor: 'contact' },
 ]
 
 const activeLanguage = ref('es')
@@ -119,6 +122,7 @@ onUnmounted(() => {
     html, body
         margin: 0
         width: 100%
+        scroll-behavior: smooth
     button
         cursor: pointer
 
@@ -147,6 +151,9 @@ onUnmounted(() => {
             color: #fff
             li
                 font-size: .9rem
+                a
+                    color: var(--primary-light)
+                    text-decoration: none
     .desktop-toggle
         position: absolute
         top: 50%
@@ -175,6 +182,9 @@ onUnmounted(() => {
                 text-transform: uppercase
                 text-align: center
                 color: var(--primary-light)
+                a
+                    color: var(--primary-light)
+                    text-decoration: none
         .close-mobile-nav
             height: 1.5rem
             width: 1.5rem

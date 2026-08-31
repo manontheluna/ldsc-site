@@ -22,7 +22,7 @@
     justify-content: center
     padding: 1.5rem
     text-align: center
-    background: var(--primary-dark)
+    background: var(--primary-contrast)
     gap: 1.5rem
     @media (min-width: 743px)
         gap: 3rem
@@ -35,11 +35,11 @@
         border: none
         border-radius: .25rem
         &.book-now
-            background: var(--primary-light)
+            background: var(--primary-contrast-light)
             color: var(--secondary-dark)
     h2
         font-family: var(--display-font)
-        color: var(--primary-contrast)
+        color: var(--primary-dark)
         max-width: 880px
         @media (min-width: 743px)
             font-size: 2rem
@@ -47,7 +47,7 @@
             font-size: 2rem
     p
         font-family: var(--copy-font)
-        color: var(--primary-light)
+        color: var(--primary-dark)
         max-width: 526px
         @media (min-width: 743px)
             font-size: 1.5rem

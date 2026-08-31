@@ -1,5 +1,5 @@
 <template>
-    <section class="why-us">
+    <section class="why-us" id="why-us">
         <h2>
             Why Clients Choose Us
         </h2>

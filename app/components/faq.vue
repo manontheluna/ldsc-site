@@ -1,5 +1,5 @@
 <template>
-    <section class="faq">
+    <section class="faq" id="faq">
         <h2>FAQ</h2>
         <ul class="questions">
             <li v-for="(q, index) in FAQS" >

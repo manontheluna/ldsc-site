@@ -14,12 +14,16 @@
                 Professional norteño entertainment across Southern California with over 20 years of live perfomance experience.
             </p>
             <div class="hero-content-ctas">
-                <button class="book-now">
-                    Book Now
-                </button>
-                <button class="call-now">
-                    Call Us
-                </button>                    
+                <a href="#contact">
+                    <button class="book-now">
+                        Book Now
+                    </button>
+                </a>
+                <a href="#contact">
+                    <button class="call-now">
+                        Call Us
+                    </button>
+                </a>                  
             </div>
         </div>
     </section>

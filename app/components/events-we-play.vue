@@ -1,5 +1,5 @@
 <template>
-    <section class="events-we-play">
+    <section class="events-we-play" id="events-we-play">
         <h2>
             Events We Play
         </h2>

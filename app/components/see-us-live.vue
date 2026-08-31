@@ -1,5 +1,5 @@
 <template>
-    <section class="see-us-live">
+    <section class="see-us-live" id="videos">
         <h2>
             See Us Perform
         </h2>

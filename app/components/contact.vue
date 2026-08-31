@@ -1,5 +1,5 @@
 <template>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="wrapper">
             <div class="contact-form">
                 <form>
@@ -27,6 +27,9 @@
                         Message
                         <textarea name="message"></textarea>
                     </label>
+                    <button>
+                        Submit
+                    </button>
                 </form>
             </div>
             <div class="call-cta">
@@ -122,6 +125,13 @@ const eventType = [
                 gap: .5rem
                 height: 100%
                 flex: 1
+                button
+                    // width: 11.25rem
+                    height: 3rem
+                    font-family: var(--section-heading-font)
+                    text-transform: uppercase
+                    border: none
+                    border-radius: .25rem
                 label
                     display: flex
                     flex-direction: column
