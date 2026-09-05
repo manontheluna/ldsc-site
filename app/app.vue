@@ -2,20 +2,22 @@
     <div class="app">
         <site-header @toggle-nav="() => { navOpen = true }"/>
         <nav>
-            <div v-if="navOpen" class="mobile-nav">
-                <button class="close-mobile-nav" @click="() => { navOpen = false }">
-                    <span>
-                        Close Mobile Navigation
-                    </span>
-                </button>
-                <ul>
-                    <li v-for="(link, index) in LINKS" :key="index">
-                        <a :href="`#${link.anchor}`" @click="navOpen = false">
-                            {{ link.label }}
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <transition name="slide-fade">
+                <div v-if="navOpen" class="mobile-nav">
+                    <button class="close-mobile-nav" @click="() => { navOpen = false }">
+                        <span>
+                            Close Mobile Navigation
+                        </span>
+                    </button>
+                    <ul>
+                        <li v-for="(link, index) in LINKS" :key="index">
+                            <a :href="`#${link.anchor}`" @click="navOpen = false">
+                                {{ link.label }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </transition>
             <div class="desktop-nav" :class="{ scrolled: isScrolled }">
                 <ul>
                     <li v-for="(link, index) in LINKS" :key="index">
@@ -212,4 +214,12 @@ onUnmounted(() => {
                 background: var(--primary-light)
             span
                 display: none
+.slide-fade-enter-active
+    transition: all .2s ease-out
+.slide-fade-leave-active
+    transition: all .2s cubic-bezier(1, .5, .8, 1)
+.slide-fade-enter-from,
+.slide-fade-leave-to
+    transform: translateX(100%)
+    opacity: 0
 </style>
