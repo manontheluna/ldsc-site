@@ -17,10 +17,15 @@
                 </small>
             </li>
         </ul>
-        <div class="right" @click="moveCards">
-            <span>
-                Move carousel
-            </span>
+        <div class="controls">
+            <div class="left" @click="moveCards('left')">
+                <span>Move Carousel Left</span>
+            </div>
+            <div class="right" @click="moveCards">
+                <span>
+                    Move carousel Right
+                </span>
+            </div>
         </div>
     </div>
 </template>
@@ -36,10 +41,15 @@ const props = defineProps({
 
 const currentIndex = ref(0)
 const uiCards = ref()
-function moveCards() {
-    currentIndex.value++
-    if (currentIndex.value >= props.cardData.length) {
-        currentIndex.value = 0
+function moveCards(dir = 'right') {
+    if (dir === 'left') {
+        if (currentIndex.value === 0) return
+        else currentIndex.value--
+    } else {
+        currentIndex.value++
+        if (currentIndex.value >= props.cardData.length) {
+            currentIndex.value = 0
+        }
     }
 }
 </script>
@@ -49,7 +59,7 @@ function moveCards() {
     list-style: none
     display: flex
     gap: 1.5rem
-    position: absolute
+    // position: absolute
     top: 0
     left: 0
     transform: translateX(calc(var(--current-index) * -1 * (18.375rem + 1.5rem)))
@@ -86,21 +96,43 @@ function moveCards() {
     width: 100%
     overflow: hidden
     max-width: 100%
-    height: 400px
     position: relative
+    gap: 1.5rem
+    display: flex
+    flex-direction: column
     small
         color: var(--primary-contrast-light)
         font-family: var(--section-heading-font)
         text-transform: uppercase
-    .right
-        position: absolute
-        top: 0
-        right: 0
-        z-index: 2
-        height: 100%
+.controls
+    display: flex
+    gap: 1rem
+    .left, .right
+        height: 4rem
         width: 3rem
-        background: linear-gradient(to left, #000, rgba(0, 0, 0, 0))
-        cursor: pointer
+        background: var(--primary-contrast-light)
+        display: flex
+        align-items: center
+        justify-content: center
         span
             display: none
+    .left
+        &:before
+            content: ''
+            width: 0
+            height: 0
+            border-top: 10px solid transparent
+            border-bottom: 10px solid transparent
+            border-right: 10px solid #000
+            display: block
+            cursor: pointer
+    .right
+        &:before
+            content: ''
+            width: 0
+            height: 0
+            border-top: 10px solid transparent
+            border-bottom: 10px solid transparent
+            border-left: 10px solid #000
+            display: block
 </style>
