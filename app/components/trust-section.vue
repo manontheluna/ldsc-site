@@ -1,12 +1,12 @@
 <template>
     <section class="trust-section">
         <ul>
-            <li v-for="(item, index) in TRUST_ITEMS" :key="index">
+            <li v-for="(item, index) in tm('trust.items')" :key="index">
                 <h2>
-                    {{ item.heading }}
+                    {{ rt(item.heading) }}
                 </h2>
                 <p>
-                    {{ item.subheading }}
+                    {{ rt(item.subheading) }}
                 </p>
             </li>
         </ul>
@@ -14,6 +14,9 @@
 </template>
 
 <script setup>
+
+const { rt, tm } = useI18n()
+
 const TRUST_ITEMS = [
     {
         heading: '20+ Years',

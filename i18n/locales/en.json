@@ -1,0 +1,16 @@
+{
+    "hero": {
+        "heading": "Live Norteño Music For Weddings, Parties, & Special Events",
+        "subheading": "Professional norteño entertainment across Southern California with over 20 years of live perfomance experience.",
+        "hero-cta-main": "Book Now",
+        "hero-cta-secondary": "Call Us"
+    },
+    "trust": {
+        "items": [
+            { "heading": "20+ Years", "subheading": "Of Experience" },
+            { "heading": "Professional", "subheading": "Sound & Presentation" },
+            { "heading": "Live", "subheading": "Entertainment" },
+            { "heading": "Reliable", "subheading": "& Punctual" }
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "hero": {
+        "heading": "Grupo Norteño En Vivo Para Bodas, Quinceañeras, Y Eventos Especiales",
+        "subheading": "Entretenimiento norteño profesional en todo el sur de California con más de 20 años de experiencia en actuaciones en vivo",
+        "hero-cta-main": "Reserva Ya",
+        "hero-cta-secondary": "LLamanos"
+    },
+    "trust": {
+        "items": [
+            { "heading": "20+ Años", "subheading": "De Experiencia" },
+            { "heading": "Professional", "subheading": "Sonido Y Presentacion" },
+            { "heading": "En Vivo", "subheading": "Entretenimiento" },
+            { "heading": "Confiable", "subheading": "Y Puntual" }
+        ]
+    }
+}
