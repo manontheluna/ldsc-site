@@ -38,16 +38,17 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed } from 'vue'
 
-const emit = defineEmits(['toggleNav'])
+const emit = defineEmits(['toggleNav', 'toggleLang'])
 
-const activeLanguage = ref('es')
-const markerRight = ref(false)
+const { locale } = useI18n()
+
+const activeLanguage = computed(() => locale.value)
+const markerRight = computed(() => locale.value === 'en')
 
 function toggleLang(lang) {
-    activeLanguage.value = lang
-    markerRight.value = lang === 'en'
+    emit('toggleLang', lang)
 }
 </script>
 

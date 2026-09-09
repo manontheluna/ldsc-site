@@ -7,21 +7,19 @@
         </div>
         <div class="overlay"></div>
         <div class="content">
-            <h1>
-                Live Norteño Music For Weddings, Parties, &amp; Special Events
-            </h1>
+            <h1>{{ t('hero.heading') }}</h1>
             <p>
-                Professional norteño entertainment across Southern California with over 20 years of live perfomance experience.
+                {{ t('hero.subheading') }}
             </p>
             <div class="hero-content-ctas">
                 <a href="#contact">
                     <button class="book-now">
-                        Book Now
+                        {{ t('hero.hero-cta-main') }}
                     </button>
                 </a>
                 <a href="#contact">
                     <button class="call-now">
-                        Call Us
+                        {{ t('hero.hero-cta-secondary') }}
                     </button>
                 </a>                  
             </div>
@@ -30,17 +28,18 @@
 </template>
 
 <script setup>
-
+const { t } = useI18n()
 </script>
 
 <style lang="sass">
 .hero
     position: relative
-    height: 100dvh
+    height: calc(100vh - 3.5rem)
     overflow: hidden
     display: flex
     flex-direction: column
     justify-content: flex-end
+    padding-bottom: 1.5rem
     .content
         position: relative
         z-index: 2
