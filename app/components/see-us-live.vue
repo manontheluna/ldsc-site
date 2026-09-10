@@ -1,7 +1,7 @@
 <template>
     <section class="see-us-live" id="videos">
         <h2>
-            See Us Perform
+            {{ t('videos.heading') }}
         </h2>
         <div class="active-video">
             <video ref="videoPlayer" :key="activeVideo.id" controls>
@@ -30,6 +30,9 @@
 
 <script setup>
 import { ref } from 'vue'
+
+const { t } = useI18n()
+
 const videos = [
     {
         url: '/videos/el-centenario.mp4',

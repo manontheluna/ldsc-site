@@ -1,4 +1,36 @@
 {
+    "contact-form": {
+        "labels": {
+            "name": "nombre",
+            "phone": "telephono",
+            "day": "fecha",
+            "event": "tipo de evento",
+            "message": "mensaje",
+            "button": "enviar"
+        },
+        "events": [
+            { "label": "Cumpleaño" },
+            { "label": "Boda" },
+            { "label": "Quinceañera" },
+            { "label": "Aniversario" },
+            { "label": "Baby Shower" },
+            { "label": "Graduacion" },
+            { "label": "Primera Comunion" },
+            { "label": "Bautizos" },
+            { "label": "Divorcio" },
+            { "label": "Otro" }
+        ]
+    },
+    "navigation": {
+        "links": [
+            { "label": "eventos", "anchor": "events-we-play" },
+            { "label": "videos", "anchor": "videos" },
+            { "label": "porque nosotros", "anchor": "why-us" },
+            { "label": "preguntas frecuentes", "anchor": "faq" },
+            { "label": "testimonios", "anchor": "testimonials" },
+            { "label": "contacto", "anchor": "contact" }
+        ]
+    },
     "hero": {
         "heading": "Grupo Norteño En Vivo Para Bodas, Quinceañeras, Y Eventos Especiales",
         "subheading": "Entretenimiento norteño profesional en todo el sur de California con más de 20 años de experiencia en actuaciones en vivo",
@@ -8,14 +40,218 @@
     "trust": {
         "items": [
             { "heading": "20+ Años", "subheading": "De Experiencia" },
-            { "heading": "Professional", "subheading": "Sonido Y Presentacion" },
+            { "heading": "Profesional", "subheading": "Sonido Y Presentacion" },
             { "heading": "En Vivo", "subheading": "Entretenimiento" },
             { "heading": "Confiable", "subheading": "Y Puntual" }
         ]
     },
     "events": {
         "heading": "Eventos Que Tocamos",
+        "cards": [
+            {
+                "label": "Cumpleaños",
+                "copy": "Celebra tu cumpleaños con auténtica música norteña en vivo que llenará tu fiesta de energía y emoción. Mantendremos a tus invitados entretenidos de principio a fin."
+            },
+            {
+                "label": "Bodas",
+                "copy": "Celebra tu boda con música norteña en vivo que creará recuerdos inolvidables para ti y tus invitados. Nuestra banda ofrece la combinación perfecta de música romántica y llena de energía para hacer de tu día especial un momento inolvidable."
+            },
+            {
+                "label": "Quinceañeras",
+                "copy": "Haz que tu quinceañera sea inolvidable con música norteña en vivo que mantendrá a familiares y amigos bailando toda la noche. Ofrecemos la música perfecta para acompañar esta celebración única e inolvidable."
+            },
+            {
+                "label": "Aniversarios",
+                "copy": "Celebra tu aniversario con música norteña en vivo que crea un ambiente cálido y festivo. Ya sea una reunión íntima o una gran celebración, haremos que esta ocasión sea inolvidable."
+            },
+            {
+                "label": "Baby Showers",
+                "copy": "Celebra el crecimiento de tu familia con música norteña en vivo que le dará alegría y calidez a tu baby shower. Creamos un ambiente divertido y familiar que todos podrán disfrutar."
+            },
+            {
+                "label": "Graduaciones",
+                "copy": "Celebra tu graduación con música norteña en vivo para conmemorar este importante logro con estilo. Nuestra banda brinda el entretenimiento perfecto para que familiares y amigos disfruten juntos de este momento especial."
+            },
+            {
+                "label": "Primeras Comuniones",
+                "copy": "Celebra una Primera Comunión con música norteña en vivo que reúne a familiares y seres queridos después de la ceremonia. Nuestras presentaciones crean un ambiente alegre y acogedor para invitados de todas las edades."
+            },
+            {
+                "label": "Bautizos",
+                "copy": "Haz que la celebración de un bautizo sea aún más especial con música norteña en vivo para compartir con familiares y seres queridos. Ofrecemos música que complementa esta ocasión tan alegre y memorable."
+            },
+            {
+                "label": "Divorcios",
+                "copy": "Comienza un nuevo capítulo con una gran celebración y música norteña en vivo que mantendrá la fiesta llena de alegría y energía. Reúne a tus amigos y disfruta de una noche inolvidable con buena música y mucho baile."
+            }
+        ],
         "hook": "Planeando algo differente?",
         "cta": "Tocamos música en vivo para bodas, cumpleaños, fiestas privadas y todo tipo de celebraciones. Incluso si tu evento no está en esta lista, es muy probable que podamos participar. Ponte en contacto con nosotros y cuéntanos qué estás planeando."
+    },
+    "videos": {
+        "heading": "Míranos en Vivo"
+    },
+    "why": {
+        "heading": "Por Qué Nuestros Clientes Nos Eligen",
+        "cards": [
+            {
+                "heading": "Más de 20 años de experiencia",
+                "copy": "Durante más de dos décadas, hemos ofrecido música norteña en vivo para bodas, quinceañeras, cumpleaños, fiestas privadas, eventos corporativos y celebraciones familiares en todo el sur de California. Nuestros años de experiencia nos permiten adaptarnos a cada lugar, público y evento, brindando una presentación profesional que ayuda a hacer de su celebración un momento inolvidable de principio a fin."
+            },
+            {
+                "heading": "Profesionales y confiables",
+                "copy": "Planificar un evento implica suficiente estrés. Usted no debería tener que preocuparse por el entretenimiento. Desde su primer contacto hasta nuestra última presentación, nos enorgullece ofrecer comunicación clara, llegar puntualmente, mantener una presentación profesional y brindar un servicio confiable. Trabajamos de cerca con cada cliente para asegurarnos de que su evento se desarrolle sin problemas y que sus invitados disfruten de una experiencia inolvidable."
+            },
+            {
+                "heading": "Música Norteña Auténtica en Vivo",
+                "copy": "Nuestro objetivo es sencillo: crear un ambiente que reúna a las personas. Ya sea que sus invitados quieran bailar, cantar o simplemente disfrutar de auténtica música en vivo, adaptamos cada presentación a la energía de su celebración. Combinamos los clásicos favoritos de la música norteña con éxitos modernos para ofrecer música que conecta con públicos de todas las edades."
+            },
+            {
+                "heading": "Perfectos para Cada Celebración",
+                "copy": "Cada evento es único, y cada presentación también debería serlo. Ya sea que esté organizando una reunión íntima en casa, una gran recepción de boda, una quinceañera, una fiesta de cumpleaños o una celebración corporativa, adaptamos nuestra presentación al lugar, horario y tipo de invitados. Sin importar la ocasión, nos comprometemos a brindar un entretenimiento que mantenga viva la celebración."
+            }
+        ]
+    },
+    "faq": {
+        "heading": "Preguntas Frecuentes",
+        "questions": [
+            {
+                "question": "¿Cuántos integrantes tiene la banda?",
+                "answer": "Contamos con cinco integrantes: un cantante principal, un guitarrista, un bajista, un baterista y un acordeonista."
+            },
+            {
+                "question": "¿Ustedes proporcionan su propio equipo de sonido?",
+                "answer": "Sí. Contamos con un sistema de sonido de alta calidad, bien equilibrado y ajustado profesionalmente para garantizar un excelente sonido durante todo su evento."
+            },
+            {
+                "question": "¿Cuánto cobran?",
+                "answer": "Nuestras tarifas generalmente van de $550 a $750 por hora, dependiendo de la ubicación del evento y la distancia del viaje. Contáctenos para recibir una cotización personalizada; con gusto hablaremos sobre su evento y le proporcionaremos un precio preciso."
+            },
+            {
+                "question": "¿Hay un mínimo de horas?",
+                "answer": "Sí. Requerimos un mínimo de 3 horas para todas las reservaciones. Para reservar su fecha, se requiere un depósito equivalente al costo de la primera hora de presentación."
+            },
+            {
+                "question": "¿Viajan para eventos?",
+                "answer": "¡Claro que sí! Nos presentamos en toda el área metropolitana de Los Ángeles y en diferentes ciudades del sur de California. Pueden aplicarse cargos adicionales por traslado para eventos fuera de nuestra área de servicio local."
+            },
+            {
+                "question": "¿Qué tipo de música tocan? / ¿Tocan una variedad de música?",
+                "answer": "Nos especializamos en música norteña, pero somos una banda versátil capaz de aprender e interpretar casi cualquier canción. Nuestro repertorio incluye cumbias, huapangos, románticas, corridos y muchos otros estilos de música regional mexicana. Si hay alguna canción especial que le gustaría escuchar, háganoslo saber; con gusto podemos incluirla en su evento."
+            },
+            {
+                "question": "¿Aceptan solicitudes de canciones?",
+                "answer": "¡Sí! Podemos aprender hasta cinco canciones con anticipación para su evento. Durante la presentación, también estaremos encantados de aceptar solicitudes de canciones. Contamos con un amplio catálogo de música, pero como cada evento es diferente, no podemos garantizar que conozcamos o podamos interpretar todas las canciones solicitadas."
+            },
+            {
+                "question": "¿Ponen música durante los descansos?",
+                "answer": "Sí. Podemos proporcionar música de fondo durante nuestros descansos por un costo adicional de $100. Esta tarifa cubre el equipo adicional, la instalación y la configuración de sonido necesarias para mantener la música sonando de manera continua durante todo su evento."
+            },
+            {
+                "question": "¿Con cuánto tiempo de anticipación debo reservar?",
+                "answer": "Recomendamos reservar con la mayor anticipación posible, especialmente para fines de semana y días festivos, ya que las fechas disponibles se llenan rápidamente."
+            },
+            {
+                "question": "¿Cómo puedo contratar a la banda?",
+                "answer": "¡Reservar es fácil! Simplemente complete el formulario de contacto en nuestro sitio web o llámenos para proporcionarnos los detalles de su evento, incluyendo la fecha, ubicación y tipo de evento. Una vez que confirmemos nuestra disponibilidad, un depósito asegura su reservación."
+            },
+            {
+                "question": "¿Cuánto duran sus presentaciones?",
+                "answer": "Nos presentamos durante todo el tiempo reservado, con breves descansos entre cada presentación."
+            },
+            {
+                "question": "¿Pueden tocar al aire libre?",
+                "answer": "Sí, siempre que haya suficiente espacio, acceso a electricidad y protección contra las condiciones climáticas."
+            },
+                        {
+                "question": "¿Qué necesitan del lugar del evento?",
+                "answer": "Solicitamos un área segura y nivelada para la presentación, acceso a tomas de corriente para nuestro equipo de sonido y un espacio de estacionamiento reservado cerca del área de presentación. Esto nos permite transportar e instalar nuestros instrumentos y equipo de sonido de manera segura y eficiente."
+            },
+                        {
+                "question": "¿Pueden hacer anuncios especiales o dedicar canciones?",
+                "answer": "¡Sí! Con gusto podemos ayudar a hacer que su evento sea aún más memorable con anuncios especiales o dedicatorias, siempre que se coordinen con anticipación."
+            }
+        ]
+    },
+    "testimonials": {
+    "heading": "Testimonios",
+    "cards": [
+            {
+                "author": "Michael R.",
+                "copy": "Edward fue fantástico desde el principio hasta el final. Fue profesional, atento y se aseguró de que todo sonara excelente.",
+                "date": "08/12/26",
+                "rating": 5
+            },
+            {
+                "author": "Sarah M.",
+                "copy": "No podríamos haber pedido una mejor experiencia. La música fue exactamente lo que queríamos, y Edward se aseguró de que todo funcionara perfectamente durante el evento.",
+                "date": "07/26/26",
+                "rating": 5
+            },
+            {
+                "author": "David T.",
+                "copy": "Edward hizo un trabajo increíble en nuestro evento. Fue puntual, profesional y realmente supo cómo mantener la energía durante toda la celebración.",
+                "date": "07/08/26",
+                "rating": 5
+            },
+            {
+                "author": "Jennifer L.",
+                "copy": "Todo salió perfectamente, desde la instalación hasta la última canción. Nuestros invitados la pasaron muy bien y varias personas comentaron lo buena que estuvo la música.",
+                "date": "06/21/26",
+                "rating": 5
+            },
+            {
+                "author": "Carlos G.",
+                "copy": "Recomiendo ampliamente a Edward para cualquier evento. La calidad del sonido fue excelente y fue increíblemente fácil trabajar con él.",
+                "date": "06/05/26",
+                "rating": 5
+            },
+            {
+                "author": "Amanda P.",
+                "copy": "Edward ayudó a convertir nuestra celebración en un momento inolvidable. Fue confiable, profesional y tocó exactamente el tipo de música que esperábamos.",
+                "date": "05/17/26",
+                "rating": 5
+            },
+            {
+                "author": "Brian H.",
+                "copy": "Una experiencia excelente de principio a fin. Edward llegó temprano, tuvo todo listo a tiempo y mantuvo la música durante toda la noche.",
+                "date": "04/29/26",
+                "rating": 5
+            },
+            {
+                "author": "Nicole S.",
+                "copy": "Estamos muy contentos con cómo salió todo. Edward fue profesional, amable e hizo un excelente trabajo manteniendo a todos entretenidos.",
+                "date": "04/11/26",
+                "rating": 5
+            },
+            {
+                "author": "Daniel W.",
+                "copy": "Edward fue exactamente lo que necesitábamos para nuestro evento. La música, el sonido y el servicio en general fueron excelentes de principio a fin.",
+                "date": "03/22/26",
+                "rating": 5
+            },
+            {
+                "author": "Rachel B.",
+                "copy": "Definitivamente recomendaría a Edward. Hizo que todo el proceso fuera fácil y brindó una excelente experiencia para nosotros y nuestros invitados.",
+                "date": "02/14/26",
+                "rating": 5
+            }
+        ]
+    },
+    "footerCta": {
+        "heading": "Listo para hacer de tu evento algo inolvidable?",
+        "copy": "Lleva música norteña en vivo, energía y experiencia a tu próximo evento.",
+        "cta": "Reserva Ya"
+    },
+    "contact": {
+        "heading": "Tienes Preguntas?",
+        "copy-strong": "¿Prefieres hablar con alguien directamente?",
+        "copy": "Con gusto responderemos cualquier pregunta, hablaremos sobre tu evento y te ayudaremos a planificar la experiencia perfecta."
+    },
+    "footer": {
+        "copy": "Llevamos la auténtica música Norteña a bodas, quinceañeras, eventos privados y celebraciones en todo el sur de California.",
+        "links": "Enlaces rápidos",
+        "contact": "Contacto",
+        "area": "Área de servicio"
     }
 }

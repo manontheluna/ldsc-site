@@ -4,42 +4,44 @@
             <div class="contact-form">
                 <form>
                     <label>
-                        Name
+                        {{ t('contact-form.labels.name') }}
                         <input type="text" name="name">
                     </label>
                     <label>
-                        Phone
+                        {{ t('contact-form.labels.phone') }}
                         <input type="number" name="number">
                     </label>
                     <label>
-                        Date
+                        {{ t('contact-form.labels.day') }}
                         <input type="date" name="date">
                     </label>
                     <label>
-                        Type of Event
+                        {{ t('contact-form.labels.event') }}
                         <select>
-                            <option v-for="(type, index) in eventType" :key="index">
-                                {{ type }}
+                            <option v-for="(e, index) in events" :key="index">
+                                {{ e.label }}
                             </option>
                         </select>
                     </label>
                     <label class="message">
-                        Message
+                        {{ t('contact-form.labels.message') }}
                         <textarea name="message"></textarea>
                     </label>
                     <button>
-                        Submit
+                        {{ t('contact-form.labels.button') }}
                     </button>
                 </form>
             </div>
             <div class="call-cta">
                 <h2>
-                    Have Questions?
+                    {{ t('contact.heading') }}
                 </h2>
                 <p>
-                    <strong>Prefer to speak to someone directly?</strong>
+                    <strong>
+                        {{ t('contact.copy-strong') }}
+                    </strong>
                     <br>
-                    We’re happy to answer any questions, discuss your event, and help you plan the perftct experience.
+                    {{ t('contact.copy') }}
                 </p>
                 <div class="contact-people">
                     <div class="contact-person">
@@ -57,6 +59,9 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+const { t, tm, rt } = useI18n()
+
 const eventType = [
     'Birthdays',
     'Weddings',
@@ -68,6 +73,13 @@ const eventType = [
     'Baptisms',
     'Divorces'
 ]
+
+const events = computed(() => {
+    return tm('contact-form.events').map(event => ({
+        label: rt(event.label)
+    }))
+})
+
 </script>
 
 <style lang="sass">

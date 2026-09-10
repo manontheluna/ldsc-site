@@ -13,7 +13,7 @@
                         </span>
                     </button>
                     <ul>
-                        <li v-for="(link, index) in LINKS" :key="index">
+                        <li v-for="(link, index) in links" :key="index">
                             <a :href="`#${link.anchor}`" @click="navOpen = false">
                                 {{ link.label }}
                             </a>
@@ -23,7 +23,7 @@
             </transition>
             <div class="desktop-nav" :class="{ scrolled: isScrolled }">
                 <ul>
-                    <li v-for="(link, index) in LINKS" :key="index">
+                    <li v-for="(link, index) in links" :key="index">
                         <a :href="`#${link.anchor}`">
                             {{ link.label }}
                         </a>
@@ -31,7 +31,7 @@
                 </ul>
                 <div class="language-toggle desktop-toggle">
                     <div
-                        @click="toggleLang('es')"
+                        @click="switchLanguage('es')"
                         :class="['es', { active: activeLanguage === 'es' }]"
                     >
                         <h4>
@@ -39,7 +39,7 @@
                         </h4>
                     </div>
                     <div
-                        @click="toggleLang('en')"
+                        @click="switchLanguage('en')"
                         :class="['en', { active: activeLanguage === 'en' }]"
                     >
                         <h4>
@@ -65,26 +65,25 @@
     </div>
 </template>
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 
-const { locale } = useI18n()
+const { locale, t, tm, rt } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 
 async function switchLanguage(lang) {
     await navigateTo(switchLocalePath(lang))
 }
 
-const LINKS = [
-    { label: 'events', anchor: 'events-we-play' },
-    { label: 'videos', anchor: 'videos' },
-    { label: 'why us', anchor: 'why-us' },
-    { label: 'faq', anchor: 'faq' },
-    { label: 'testimonials', anchor: 'testimonials' },
-    { label: 'contact', anchor: 'contact' },
-]
+const activeLanguage = computed(() => locale.value)
+const markerRight = computed(() => locale.value === 'en')
 
-const activeLanguage = ref('es')
-const markerRight = ref(false)
+const links = computed(() => {
+    return tm('navigation.links').map(link => ({
+        label: rt(link.label),
+        anchor: rt(link.anchor)
+    }))
+})
+
 const navOpen = ref(false)
 
 function toggleLang(lang) {

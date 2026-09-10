@@ -1,13 +1,25 @@
 <template>
     <section class="testimonials" id="testimonials">
         <h2>
-            Testimonials
+            {{ t('testimonials.heading') }}
         </h2>
-        <carousel :cardData="TESTIMONIALS" />
+        <carousel :cardData="cardItems" />
     </section>
 </template>
 
 <script setup>
+import { computed, ref } from 'vue'
+const { t, tm, rt } = useI18n()
+
+const cardItems = computed(() => {
+    return tm('testimonials.cards').map(item => ({
+        author: rt(item.author),
+        copy: rt(item.copy),
+        date: rt(item.date),
+        rating: rt(item.rating)
+    }))
+})
+
 const TESTIMONIALS = [
     {
         author: 'Michael R.',
@@ -69,7 +81,7 @@ const TESTIMONIALS = [
         date: '02/14/26',
         rating: 5
     }
-];
+]
 </script>
 
 <style lang="sass">

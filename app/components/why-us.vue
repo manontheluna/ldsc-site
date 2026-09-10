@@ -1,15 +1,15 @@
 <template>
     <section class="why-us" id="why-us">
         <h2>
-            Why Clients Choose Us
+            {{ t('why.heading') }}
         </h2>
         <ul>
-            <li v-for="(reason, index) in REASONS" :key="index">
+            <li v-for="(reason, index) in tm('why.cards')" :key="index">
                 <h3>
-                    {{ reason.heading }}
+                    {{ rt(reason.heading) }}
                 </h3>
                 <p>
-                    {{ reason.copy }}
+                    {{ rt(reason.copy) }}
                 </p>
             </li>
         </ul>
@@ -17,6 +17,7 @@
 </template>
 
 <script setup>
+const { t, tm, rt } = useI18n()
 const REASONS = [
     {
         heading: '20+ Years of Experience',
@@ -59,8 +60,6 @@ const REASONS = [
         color: var(--primary-light)
         @media (min-width: 743px)
             text-align: center
-            font-size: 2rem
-        @media (min-width: 1019px)
             font-size: 3rem
     ul
         list-style: none

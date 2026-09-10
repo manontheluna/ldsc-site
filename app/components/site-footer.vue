@@ -7,7 +7,7 @@
                         Los De South Central
                     </h2>
                     <p>
-                        Bringing authentic Norteño music to weddings, quinceañeras, private events, and celebrations throughout Southern California.
+                        {{ t('footer.copy') }}
                     </p>
                     <div class="social">
                         <a href="https://www.instagram.com/los_de_south_central_oficial">
@@ -20,7 +20,7 @@
                 </div>
                 <div class="footer-links">
                     <h3>
-                        Quick Links
+                        {{ t('footer.links') }}
                     </h3>
                     <ul>
                         <li v-for="(link, index) in NAV_LINKS" :key="index">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="footer-contact">
                     <h3>
-                        Contact
+                        {{ t('footer.contact') }}
                     </h3>
                     <div class="contact-people">
                         <div class="contact-person">
@@ -46,7 +46,9 @@
                     </div>
                 </div>
                 <div class="service-area">
-                    <h3>Service Area</h3>
+                    <h3>
+                        {{ t('footer.area') }}
+                    </h3>
                     <ul>
                         <li>Greater Los Angeles</li>
                         <li>Orange County</li>
@@ -62,6 +64,8 @@
 </template>
 
 <script setup>
+const { t } = useI18n()
+
 const NAV_LINKS = [
     'Events',
     'Videos',

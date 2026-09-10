@@ -1,18 +1,20 @@
 <template>
     <section class="footer-cta">
         <h2>
-            Ready to make your event unforgettable?
+            {{ t('footerCta.heading') }}
         </h2>
         <p>
-            Bring live Norteño music, energy, and experience to your next event.
+            {{ t('footerCta.copy') }}
         </p>
         <button class="book-now">
-            Book Now
+            {{ t('footerCta.cta') }}
         </button>
     </section>
 </template>
 
-<script setup></script>
+<script setup>
+const { t } = useI18n()
+</script>
 
 <style lang="sass">
 .footer-cta
