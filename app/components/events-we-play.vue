@@ -1,7 +1,7 @@
 <template>
     <section class="events-we-play" id="events-we-play">
         <h2>
-            Events We Play
+            {{ t('events.heading') }}
         </h2>
         <carousel :cardData="EVENTS" />
         <p class="events-soft-cta">
@@ -12,6 +12,7 @@
 
 <script setup>
 import { ref } from 'vue'
+const { t } = useI18n()
 const EVENTS = [
     {
         label: 'Birthdays',

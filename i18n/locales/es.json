@@ -12,5 +12,8 @@
             { "heading": "En Vivo", "subheading": "Entretenimiento" },
             { "heading": "Confiable", "subheading": "Y Puntual" }
         ]
+    },
+    "events": {
+        "heading": "Eventos Que Tocamos"
     }
 }

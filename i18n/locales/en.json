@@ -12,5 +12,8 @@
             { "heading": "Live", "subheading": "Entertainment" },
             { "heading": "Reliable", "subheading": "& Punctual" }
         ]
+    },
+    "events": {
+        "heading": "Events We Play"
     }
 }
