@@ -5,7 +5,7 @@
         </h2>
         <carousel :cardData="EVENTS" />
         <p class="events-soft-cta">
-            <strong>Planning something a little different?</strong> We play live music for weddings, birthdays, private parties, and all kinds of celebrations. Even if your event isn’t listed above, there’s a good chance we can be part of it. Get in touch and let us know what you’re planning.
+            <strong>{{ t('events.hook') }}</strong> {{ t('events.cta') }}
         </p>
     </section>
 </template>
