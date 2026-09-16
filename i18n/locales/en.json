@@ -25,6 +25,7 @@
         "links": [
             { "label": "events", "anchor": "events-we-play" },
             { "label": "videos", "anchor": "videos" },
+            { "label": "gallery", "anchor": "gallery" },
             { "label": "why us", "anchor": "why-us" },
             { "label": "faq", "anchor": "faq" },
             { "label": "testimonials", "anchor": "testimonials" },
@@ -90,6 +91,9 @@
     },
     "videos": {
         "heading": "See Us Perform"
+    },
+    "gallery": {
+        "heading": "Gallery"
     },
     "why": {
         "heading": "Why Clients Choose Us",

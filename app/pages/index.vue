@@ -56,6 +56,7 @@
         <trust-section />
         <events-we-play />
         <see-us-live />
+        <gallery />
         <why-us />
         <faq />
         <testimonials />

@@ -25,6 +25,7 @@
         "links": [
             { "label": "eventos", "anchor": "events-we-play" },
             { "label": "videos", "anchor": "videos" },
+            { "label": "galeria", "anchor": "gallery" },
             { "label": "porque nosotros", "anchor": "why-us" },
             { "label": "preguntas frecuentes", "anchor": "faq" },
             { "label": "testimonios", "anchor": "testimonials" },
@@ -90,6 +91,9 @@
     },
     "videos": {
         "heading": "Míranos en Vivo"
+    },
+    "gallery": {
+        "heading": "Galeria"
     },
     "why": {
         "heading": "Por Qué Nuestros Clientes Nos Eligen",
