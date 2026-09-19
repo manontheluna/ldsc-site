@@ -3,6 +3,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxtjs/i18n'],
+  runtimeConfig: {
+    resendApiKey: '',
+    contactEmail: ''
+  },
   i18n : {
     defaultLocale: 'es',
     strategy: 'prefix_except_default',

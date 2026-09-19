@@ -2,6 +2,7 @@
     "contact-form": {
         "labels": {
             "name": "nombre",
+            "email": "email",
             "phone": "telephono",
             "day": "fecha",
             "event": "tipo de evento",

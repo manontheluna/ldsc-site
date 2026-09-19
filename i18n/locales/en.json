@@ -2,6 +2,7 @@
     "contact-form": {
         "labels": {
             "name": "name",
+            "email": "email",
             "phone": "phone",
             "day": "date",
             "event": "type of event",
@@ -250,7 +251,7 @@
     "contact": {
         "heading": "Have Questions?",
         "copy-strong": "Prefer to speak to someone directly?",
-        "copy": "We’re happy to answer any questions, discuss your event, and help you plan the perftct experience."
+        "copy": "We’re happy to answer any questions, discuss your event, and help you plan the perfect experience."
     },
     "footer": {
         "copy": "Bringing authentic Norteño music to weddings, quinceañeras, private events, and celebrations throughout Southern California.",

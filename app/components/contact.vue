@@ -2,14 +2,22 @@
     <section class="contact" id="contact">
         <div class="wrapper">
             <div class="contact-form">
-                <form>
+                <form ref="form">
+                    <input
+                        class="honeypot"
+                        type="text"
+                        name="website"
+                        tabindex="-1"
+                        autocomplete="off"
+                        aria-hidden="true"
+                    >
                     <label>
                         {{ t('contact-form.labels.name') }}
                         <input type="text" name="name">
                     </label>
                     <label>
                         {{ t('contact-form.labels.phone') }}
-                        <input type="number" name="number">
+                        <input type="tel" name="number">
                     </label>
                     <label>
                         {{ t('contact-form.labels.day') }}
@@ -17,8 +25,8 @@
                     </label>
                     <label>
                         {{ t('contact-form.labels.event') }}
-                        <select>
-                            <option v-for="(e, index) in events" :key="index">
+                        <select name="type">
+                            <option v-for="(e, index) in events" :key="index" :value="e.label">
                                 {{ e.label }}
                             </option>
                         </select>
@@ -27,7 +35,7 @@
                         {{ t('contact-form.labels.message') }}
                         <textarea name="message"></textarea>
                     </label>
-                    <button>
+                    <button @click.prevent="submitForm">
                         {{ t('contact-form.labels.button') }}
                     </button>
                 </form>
@@ -79,6 +87,23 @@ const events = computed(() => {
         label: rt(event.label)
     }))
 })
+
+const form = ref()
+
+async function submitForm() {
+    const formData = new FormData(form.value)
+
+    try {
+        await $fetch('/api/contact', {
+            method: 'POST',
+            body: Object.fromEntries(formData)
+        })
+
+        console.log('inquiry sent')
+    } catch (error) {
+        console.error('error: ', error)
+    }
+}
 
 </script>
 
@@ -174,4 +199,6 @@ const events = computed(() => {
             flex: 1
             textarea
                 flex: 1
+    .honeypot
+        display: none
 </style>
