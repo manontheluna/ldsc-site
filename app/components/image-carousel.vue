@@ -6,7 +6,7 @@
             :style="{ '--current-index': currentIndex }"
         >
             <li v-for="(card, index) in images" :key="index">
-                <img :src="card">
+                <img :src="card.url" :alt="card.alt">
             </li>
         </ul>
         <div class="controls">
@@ -50,10 +50,10 @@ function moveCards(dir = 'right') {
 .image-cards
     list-style: none
     display: flex
-    gap: 1.5rem
+    gap: 1.25rem
     top: 0
     left: 0
-    transform: translateX(calc(var(--current-index) * -1 * (18.375rem + 1.5rem)))
+    transform: translateX(calc(var(--current-index) * -1 * (20rem + 1.25rem)))
     transition: transform 0.4s ease
     h3
         font-size: 1.5rem
@@ -77,7 +77,7 @@ function moveCards(dir = 'right') {
         @media (min-width: 743px)
             width: 20rem
     @media (min-width: 743px)
-        transform: translateX(calc(var(--current-index) * -1 * (20rem + 1.5rem)))
+        transform: translateX(calc(var(--current-index) * -1 * (20rem + 1.25rem)))
         li
             width: 20rem
 .image-carousel
