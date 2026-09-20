@@ -34,13 +34,10 @@ const isOpen = ref(false)
 const open = ref([])
 
 function toggleQuestion(index) {
-    console.log(index)
     if (open.value.includes(index)) {
         open.value = open.value.filter(i => i !== index)
-        console.log('remove index: ', open.value)
     } else {
         open.value.push(index)
-        console.log('add new index: ', open.value)
     }
 }
 
