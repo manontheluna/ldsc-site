@@ -123,6 +123,8 @@ async function submitForm() {
             height: 100vh
         @media (min-width: 743px)
             flex-direction: row-reverse
+        @media (min-width: 1200px)
+            padding: 1.5rem 0
         .call-cta
             display: flex
             flex-direction: column
