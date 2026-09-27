@@ -18,14 +18,14 @@
             </li>
         </ul>
         <div class="controls">
-            <div class="left" @click="moveCards('left')">
+            <button class="left" @click="moveCards('left')">
                 <span>Move Carousel Left</span>
-            </div>
-            <div class="right" @click="moveCards">
+            </button>
+            <button class="right" @click="moveCards">
                 <span>
                     Move carousel Right
                 </span>
-            </div>
+            </button>
         </div>
     </div>
 </template>
@@ -114,6 +114,7 @@ function moveCards(dir = 'right') {
         display: flex
         align-items: center
         justify-content: center
+        border: none
         span
             display: none
     .left
