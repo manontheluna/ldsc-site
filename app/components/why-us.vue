@@ -41,7 +41,7 @@ const REASONS = [
 <style lang="sass">
 .why-us
     min-height: 10em
-    background: url('/images/why-us-placeholder.jpg') top
+    background: url('/images/los-de-south-central-accordion-norteno-live-music.jpg') top
     background-color: var(--primary-dark)
     background-size: contain
     background-repeat: no-repeat
