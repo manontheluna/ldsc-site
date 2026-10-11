@@ -3,7 +3,8 @@
         <h2>
             {{ t('gallery.heading') }}
         </h2>
-        <image-carousel :images="eventImages" />
+        <image-carousel :images="imgs" />
+        <!-- {{ imgs }} -->
     </section>
 </template>
 
@@ -17,6 +18,13 @@ const cardItems = computed(() => {
         copy: rt(item.copy),
         date: rt(item.date),
         rating: rt(item.rating)
+    }))
+})
+
+const imgs = computed(() => {
+    return tm('gallery.images').map(img => ({
+        url: rt(img.url),
+        alt: rt(img.alt)
     }))
 })
 

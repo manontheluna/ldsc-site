@@ -94,7 +94,61 @@
         "heading": "Míranos en Vivo"
     },
     "gallery": {
-        "heading": "Galeria"
+        "heading": "Galeria",
+        "images": [
+            {
+                "url": "/images/live-music-los-de-south-central-bassist-compton-temo.jpg",
+                "alt": "Bajista de Los De South Central tocando música en vivo durante una fiesta de cumpleaños en Compton."
+            },
+            {
+                "url": "/images/live-norteño-music-event-compton.jpg",
+                "alt": "Invitado disfrutando de la música norteña en vivo de Los De South Central durante una fiesta de cumpleaños en Compton."
+            },
+            {
+                "url": "/images/live-norteño-music-los-de-south-central-accordion-jose.jpg",
+                "alt": "Acordeonista de Los De South Central tocando música norteña en vivo durante un evento en Los Ángeles."
+            },
+            {
+                "url": "/images/los-de-south-central-live-compton-inglewood-singer-maroma.jpg",
+                "alt": "Cantante principal de Los De South Central interpretando música en vivo durante un evento en Compton."
+            },
+            {
+                "url": "/images/los-de-south-central-live-norteno-music-drummer-compton-valente.jpg",
+                "alt": "Baterista y cantante de Los De South Central tocando música norteña en vivo durante un evento en Los Ángeles."
+            },
+            {
+                "url": "/images/los-de-south-central-live-norteno-music-drummer-valente.jpg",
+                "alt": "Valente, baterista y cantante de Los De South Central, tocando y cantando en vivo durante un evento en Compton."
+            },
+            {
+                "url": "/images/los-de-south-central-live-on-stage-bassist-accordion-compton-los-angeles.jpg",
+                "alt": "Bajista y acordeonista de Los De South Central en el escenario durante un evento privado con música en vivo en Compton."
+            },
+            {
+                "url": "/images/los-de-south-central-maroma-singer-live-compton.jpg",
+                "alt": "Maroma, cantante de Los De South Central, interpretando música en vivo en Compton, California."
+            },
+            {
+                "url": "/images/norteno-band-live-entertainment-los-angeles.jpg",
+                "alt": "Invitado disfrutando y bailando al ritmo de la música norteña en vivo de Los De South Central durante una fiesta de cumpleaños en Compton."
+            },
+            {
+                "url": "/images/hire-local-norteño-group-compton.jpg",
+                "alt": "Invitados posando juntos y disfrutando del ambiente musical de Los De South Central durante un evento privado en Compton."
+            },
+            {
+                "url": "/images/los-de-south-central-maroma-singer-live-south-central.jpg",
+                "alt": "Maroma y el ambiente de música en vivo de Los De South Central durante un evento privado en Compton."
+            },
+            {
+                "url": "/images/los-de-south-central-norteño-band-live-music-dancing-los-angeles.jpg",
+                "alt": "Invitados bailando al ritmo de la música norteña en vivo interpretada por Los De South Central durante un evento privado en Los Ángeles."
+            },
+            {
+                "url": "/images/los-de-south-central-temo-bass-live-los-angeles.jpg",
+                "alt": "Temo tocando el bajo con Los De South Central durante una fiesta de cumpleaños en Compton, California."
+            }
+        ]
     },
     "why": {
         "heading": "Por Qué Nuestros Clientes Nos Eligen",
@@ -246,7 +300,7 @@
     "footerCta": {
         "heading": "Listo para hacer de tu evento algo inolvidable?",
         "copy": "Lleva música norteña en vivo, energía y experiencia a tu próximo evento.",
-        "cta": "Reserva Ya"
+        "cta": "Reserva Abajo"
     },
     "contact": {
         "heading": "Tienes Preguntas?",
