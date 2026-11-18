@@ -97,6 +97,17 @@ function handleScroll() {
     isScrolled.value = window.scrollY > 25
 }
 
+// local head
+const i18nHead = useLocaleHead()
+
+useHead(() => ({
+    htmlAttrs: {
+        lang: i18nHead.value.htmlAttrs?.lang || 'es'
+    },
+    link: [...(i18nHead.value.link || [])],
+    meta: [...(i18nHead.value.meta || [])]
+}))
+
 onMounted(() => {
     window.addEventListener('scroll', handleScroll)
 })
