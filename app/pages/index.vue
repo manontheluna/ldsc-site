@@ -71,6 +71,15 @@ import { computed, onMounted, onUnmounted, ref } from 'vue'
 const { locale, t, tm, rt } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 
+useSeoMeta({
+    title: 'Los De South Central | Norteno band serving Los Angeles and surrounding areas',
+    description: 'Los De South Central, local norteno band available for quienceaneras, weddings, and more.',
+    ogTitle: 'Los De South Central | Norteno band serving Los Angeles and surrounding areas',
+    ogDescription: 'Los De South Central, local norteno band available for quienceaneras, weddings, and more.',
+    twitterCard: 'Los De South Central Norteno Band',
+})
+
+
 async function switchLanguage(lang) {
     await navigateTo(switchLocalePath(lang))
 }
