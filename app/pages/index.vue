@@ -71,6 +71,15 @@ import { computed, onMounted, onUnmounted, ref } from 'vue'
 const { locale, t, tm, rt } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 
+useSeoMeta({
+    title: 'Los De South Central | Norteno band serving Los Angeles and surrounding areas',
+    description: 'Los De South Central, local norteno band available for quienceaneras, weddings, and more.',
+    ogTitle: 'Los De South Central | Norteno band serving Los Angeles and surrounding areas',
+    ogDescription: 'Los De South Central, local norteno band available for quienceaneras, weddings, and more.',
+    twitterCard: 'Los De South Central Norteno Band',
+})
+
+
 async function switchLanguage(lang) {
     await navigateTo(switchLocalePath(lang))
 }
@@ -96,6 +105,17 @@ const isScrolled = ref(false)
 function handleScroll() {
     isScrolled.value = window.scrollY > 25
 }
+
+// local head
+const i18nHead = useLocaleHead()
+
+useHead(() => ({
+    htmlAttrs: {
+        lang: i18nHead.value.htmlAttrs?.lang || 'es'
+    },
+    link: [...(i18nHead.value.link || [])],
+    meta: [...(i18nHead.value.meta || [])]
+}))
 
 onMounted(() => {
     window.addEventListener('scroll', handleScroll)
