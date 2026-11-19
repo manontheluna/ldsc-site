@@ -35,22 +35,22 @@ const { t } = useI18n()
 
 const videos = [
     {
-        url: '/videos/el-centenario.mp4',
+        url: 'https://wpe9fthpmftl1zrq.public.blob.vercel-storage.com/el-centenario.mp4',
         label: 'El Centenario',
         id: 'el-centenario' 
     },
     {
-        url: '/videos/la-mucura.mp4',
+        url: 'https://wpe9fthpmftl1zrq.public.blob.vercel-storage.com/la-mucura.mp4',
         label: 'La Mucura',
         id: 'la-mucura'
     },
     {
-        url: '/videos/la-yaquesita.mp4',
+        url: 'https://wpe9fthpmftl1zrq.public.blob.vercel-storage.com/la-yaquesita.mp4',
         label: 'La Yaquesita',
         id: 'la-yaquesita'
     },
     {
-        url: '/videos/que-me-lleve-el-diablo.mp4',
+        url: 'https://wpe9fthpmftl1zrq.public.blob.vercel-storage.com/que-me-lleve-el-diablo.mp4',
         label: 'Que Me Lleve El Diablo',
         id: 'que-me-lleve-el-diablo'
     }
