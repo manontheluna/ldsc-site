@@ -32,9 +32,11 @@ export default defineEventHandler(async e => {
     const resend = new Resend(config.resendApiKey)
 
     const { data, error } = await resend.emails.send({
-        from: 'Band website <onboarding@resend.dev>',
-        to: config.contactEmail,
-        replyTo: 'hello@edwardluna.design',
+        from: 'Los De South Central Website:  <no-reply@notifications.losdesouthcentral.com>',
+        to: [
+            'aortega0514@gmail.com',
+            'valenterodriguez73@icloud.com'
+        ],
         subject: `New inquiry for gig`,
         html: `
             <h2>New Booking Inquiry</h2>
