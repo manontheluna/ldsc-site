@@ -236,63 +236,39 @@
     "heading": "Testimonios",
     "cards": [
             {
-                "author": "Michael R.",
+                "author": "Juana R.",
                 "copy": "Fueron fantástico desde el principio hasta el final. Profesionales, atentos y se aseguraron de que todo sonara excelente.",
-                "date": "08/12/26",
+                "date": "08/12/24",
                 "rating": 5
             },
             {
-                "author": "Sarah M.",
+                "author": "Luis G.",
                 "copy": "No podríamos haber pedido una mejor experiencia. La música fue exactamente lo que queríamos, y Los De South Central se aseguraron de que todo funcionara perfectamente durante el evento.",
-                "date": "07/26/26",
+                "date": "07/26/24",
                 "rating": 5
             },
             {
-                "author": "David T.",
+                "author": "Abi O.",
                 "copy": "Los De South Central hizieron un trabajo increíble en nuestro evento. Fueron puntual, profesional y realmente supieron cómo mantener la energía durante toda la celebración.",
-                "date": "07/08/26",
+                "date": "07/08/25",
                 "rating": 5
             },
             {
-                "author": "Jennifer L.",
+                "author": "Mayra L.",
                 "copy": "Todo salió perfectamente, desde la instalación hasta la última canción. Nuestros invitados la pasaron muy bien y varias personas comentaron lo buena que estuvo la música.",
-                "date": "06/21/26",
+                "date": "06/21/25",
                 "rating": 5
             },
             {
-                "author": "Carlos G.",
+                "author": "Eduardo L.",
                 "copy": "Recomiendo ampliamente a Los De South Central para cualquier evento. La calidad del sonido fue excelente y fue increíblemente fácil trabajar con éllos.",
-                "date": "06/05/26",
+                "date": "06/05/25",
                 "rating": 5
             },
             {
-                "author": "Amanda P.",
+                "author": "Enrique G.",
                 "copy": "Los De South Central ayudaron a convertir nuestra celebración en un momento inolvidable. Fueron confiables, profesionales y tocaron exactamente el tipo de música que esperábamos.",
                 "date": "05/17/26",
-                "rating": 5
-            },
-            {
-                "author": "Brian H.",
-                "copy": "Una experiencia excelente de principio a fin. Los De South Central llegaron temprano, tuvieron todo listo a tiempo y mantuvieron la música durante toda la noche.",
-                "date": "04/29/26",
-                "rating": 5
-            },
-            {
-                "author": "Nicole S.",
-                "copy": "Estamos muy contentos con cómo salió todo. Los De South Central fueron profesionales, amables y hizieron un excelente trabajo manteniendo a todos entretenidos.",
-                "date": "04/11/26",
-                "rating": 5
-            },
-            {
-                "author": "Daniel W.",
-                "copy": "Los De South Central fue exactamente lo que necesitábamos para nuestro evento. La música, el sonido y el servicio en general fueron excelentes de principio a fin.",
-                "date": "03/22/26",
-                "rating": 5
-            },
-            {
-                "author": "Rachel B.",
-                "copy": "Definitivamente recomendaría a Los De South Central. Hizieron que todo el proceso fuera fácil y brindaron una excelente experiencia para nosotros y nuestros invitados.",
-                "date": "02/14/26",
                 "rating": 5
             }
         ]
